@@ -1,0 +1,431 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  width: 100%;
+  height: 100%;
+  
+  font-family: "Montserrat";
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.6rem;
+  color: #ffff;
+  font-weight: 700;
+  margin-top: 1.3rem 0;
+}
+
+header {
+  width: 100%;
+  background-color: #02a28f;
+  padding: 1.6rem 15.6rem;
+  
+}
+
+.banner-article {
+  display: flex;
+  background-image: linear-gradient(
+      180deg,
+      rgba(102, 102, 102, 0.5),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url(./imgs/bannerArticle.jpg);
+  max-width: 74.4rem;
+  height: 39.6em;
+  color: #ffff;
+  background-size: cover;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+
+  padding-left: 2.4rem;
+  padding-bottom: 2.4rem;
+}
+
+.banner-article > p {
+  font-size: 1.6rem;
+}
+
+.banner-article > #destaque {
+  font-weight: 700;
+  font-size: 3.2rem;
+  margin: .1rem 0;
+}
+.banner-article span {
+  font-weight: 700;
+}
+
+.titulo-post-mais-recentes {
+  width: 74.4rem;
+  height: 5.6rem;
+  border-radius: 0.8rem;
+  background-color: #02a28f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.1rem;
+}
+.titulo-post-mais-recentes > h2 {
+  font-size: 2rem;
+  color: #ffff;
+  letter-spacing: 0%;
+  font-weight: 700;
+  padding: 1.6rem 2.4rem;
+}
+
+.titulo-post-mais-recentes > p {
+  margin-right: 2.5rem;
+  color: #ffff;
+  text-decoration: underline;
+  font-size: 1.4rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 36rem;
+  height: 39.6rem;
+  border-radius: 1.5rem;
+  background-color: none;
+  border-color: none;
+}
+
+.card > img {
+  width: 100%;
+  height: 19.1rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  object-fit: cover;
+}
+
+.card-text {
+  width: 100%;
+  padding: 0 1.6rem 0 1.6rem;
+  font-size: 1.4rem;
+  text-align: left;
+}
+
+.card-text > h3 {
+  color: #02a28f;
+  font-weight: 400;
+  margin-bottom: 0.8rem;
+}
+
+.card-text > h4 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.autor {
+  color: #616161;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+.autor span {
+  font-weight: bold;
+}
+
+#grid-container-posts-mais-recentes {
+  display: grid;
+  grid-template-columns: 36rem 39.6rem;
+  gap: 2.4rem;
+
+}
+
+.titulo-lateral {
+  width: 36rem;
+  height: 4.8rem;
+  border-radius: 1rem;
+  background-color: #02a28f;
+
+  font-size: 2rem;
+  color: #ffff;
+  font-weight: 700;
+  padding: 1.2rem 0 1.2rem 2.4rem;
+}
+#list-post-populares {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#list-post-populares > li {
+  width: 36rem;
+  height: 9.6rem;
+
+  list-style: none;
+  font-weight: 700;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  
+}
+#list-post-populares > li > img {
+  width: 13.2rem;
+  height: 7rem;
+  border-radius: 1rem;
+  object-fit: cover;
+  margin: 1.3rem 0 1.3rem 1.2rem;
+}
+.texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1.2rem;
+  padding-top: 1rem;
+}
+
+.texto > p {
+  margin: 0;
+}
+.data {
+  color: #616161;
+  font-weight: 500;
+
+  margin-top: 0.8rem;
+  margin-bottom: 1.8rem;
+}
+
+
+
+
+#list-categorias {
+  list-style: none;
+  color: #616161;
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 0;
+  
+}
+#list-categorias > li {
+  padding-top: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.shadow {
+  box-shadow: 0 20px 20px 0 #61616115, 0 20px 20px 0 #61616115;
+}
+
+footer {
+  width: 100%;
+  background-color: #02a28f;
+  margin-top: 6.5rem;
+  padding: 1.6rem 15.6rem;
+}
+
+footer > p {
+  color: #ffff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.container {
+  display: grid;
+  grid-template-columns: 74.4rem 36.1rem;
+  gap: 2.4rem;
+  margin-top: 3.4rem;
+  margin-left: 15.6rem;
+  padding: 0;
+}
+
+#grid1 {
+  grid-area: 2/1;
+}
+
+#grid2 {
+  grid-area: 3/1;
+ 
+}
+
+#grid3 {
+  grid-area: 2/2;
+ 
+}
+
+#grid4 {
+  grid-area: 3/2;
+ 
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  h1{
+    font-size: 2.4rem;
+    text-align: center;
+
+  }
+  header{
+    width: 100%;
+    padding: 1.6rem 0rem;
+   
+  }
+.container{
+  display: grid;
+  grid-template-columns: 36.1rem;
+  margin: 0;
+  padding: 2.4rem .8rem;
+  box-sizing: border-box;
+  grid-template-areas:
+      "grid1 grid1"
+      "grid2 grid2"
+      "grid3 grid4";
+  justify-content: center;
+}
+
+#grid1{
+  grid-area: grid1;
+}
+
+#grid2{
+  grid-area: grid2;
+  
+}
+
+#grid3{
+  grid-area: grid3;
+}
+
+#grid4{
+  grid-area: grid4;
+  max-width: 36.1rem;
+  
+}
+
+#grid3 .titulo-lateral{
+  padding-left: 0;
+  text-align: center;
+}
+
+#grid4 .titulo-lateral {
+  padding-left: 0;
+  text-align: center;
+}
+
+
+}
+
+@media only screen and  (max-width: 767px){
+
+  h1{
+    font-size: 2.4rem;
+    text-align: center;
+
+  }
+  header{
+    width: 100%;
+    padding: 1.6rem 0rem;
+   
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: 100%;
+    
+    margin: 0;
+    padding: 2.4rem .8rem;
+    box-sizing: border-box;
+   
+  }
+
+
+  .titulo-post-mais-recentes{
+    width: 100%;
+    max-height: 4rem ;
+    margin-bottom: 2.7rem;
+
+    
+    
+  }
+
+ 
+  .titulo-post-mais-recentes > h2 {
+    
+    padding: .8rem 1.6rem;
+  }
+  
+   
+  #list-categorias{
+    width: 100%;
+  } 
+
+  #grid1 {
+    grid-area: 2/1;
+  }
+  
+  #grid2 {
+    grid-area: 3/1;
+   
+  }
+  
+  #grid3 {
+    grid-area: 4/1;
+  }
+  
+  #grid4 {
+    grid-area: 5/1;
+  }
+  
+
+  #grid-container-posts-mais-recentes {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  
+  }
+  
+
+  .banner-article{
+    width: 100%;
+  }
+
+
+  .card {
+    width: 100%;;
+  }
+
+  .titulo-lateral {
+    width: 100%; 
+    padding: 1.2rem 0;
+    text-align: center;
+  }
+  #list-post-populares > li {
+    width: 100%; 
+   
+  }
+
+
+  footer{
+    width: 100%;
+    margin-top: 2.4rem;
+    padding: 1.7rem 0;
+
+  }
+}
